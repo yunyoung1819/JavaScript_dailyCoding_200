@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title> jquery All Selector("*") </title>
+<style>
+h3 {
+	margin : 0;
+}
+
+div, span, p{
+	width: 80px;
+	height: 40px;
+	float: left;
+	padding: 10px;
+	margin: 10px;
+	background-color: #EEEEEE;
+}
+</style>
+<!-- jquery include -->
+<script src="http://code.jquery.com/jquery-2.1.4.js"></script>
+</head>
+<body>
+		<div>DIV</div>
+		<span>SPAN</span>
+		<p>P <button>Button</button> </p>
+
+<script>
+
+//모든 element를 선택하여 css 속성 변경 후, 총 개수(length)를 저장
+var elementCount = $("*").css("border", "3px solid red").length;
+// $("*").css("border", "3px solid red");
+// var elementCount = $("*").length
+
+//앞에서 저장한 element 총 개수(length)를 화면에 출력
+$("body").prepend("<h3>" + elementCount + "elements found</h3>");	
+</script>
+</body>
+</html>

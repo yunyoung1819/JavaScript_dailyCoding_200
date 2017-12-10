@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title> jquery </title>
+<!-- jquery 사용을 위한 코드 -->
+<script src="http://code.jquery.com/jquery-2.1.4.js"></script>
+</head>
+<body>
+	<a href="http://jquery.com/">jQuery</a>
+
+	<script>
+		// 코드 입력 
+		// document loading이 완료되면 함수를 실행한다.
+		$(document).ready(function(){
+			// a tag의 Click 이벤트 발생시 alert 창을 실행한다.
+			$("a").click(function(event){
+				alert("Thanks for visiting!");
+			});
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title> Class Selector : (".class") </title>
+<style>
+div, span{
+	width: 120px;
+	height: 40px;
+	float: left;
+	padding: 10px;
+	margin: 10px;
+	background-color: #EEEEEE;
+}
+</style>
+<!-- jquery 사용을 위한 코드 -->
+<script src="http://code.jquery.com/jquery-2.1.4.js"></script>
+</head>
+<body>
+	
+<div class="notMe"> div class="notMe" </div>
+<div class="myClass"> div class="myClass" </div>
+<span class="myClass"> span class="myClass" </span>
+
+<script>
+//myClass라는 class 이름을 가진 element를 선택하여 css 속성을 변경
+$(".myClass").css("border", "3px solid red");	
+</script>
+
+</body>
+</html>

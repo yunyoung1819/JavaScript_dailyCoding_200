@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title> ID Selector : ("#id") </title>
+<style>
+h3 {
+	margin: 0;
+}
+div, span, p{
+	width: 80px;
+	height: 40px;
+	float: left;
+	padding: 10px;
+	margin: 10px;
+	background-color: #EEEEEE;
+}
+#test{
+	width: auto;
+	height: auto;
+	background-color: transparent;
+}
+</style>
+<!-- jquery 사용을 위한 코드 -->
+<script src="http://code.jquery.com/jquery-2.1.4.js"></script>
+</head>
+<body>
+	
+	<!-- 예제에서 사용할 element 선언 -->
+	<div id="test">
+		<div>DIV</div>
+		<span>SPAN</span>
+		<p>P <button>Button</button> </p>
+	</div>
+
+<script>
+		// $("#test")를 이용하여 test라는 id를 가진 element를 선택 후 
+		//find("*")를 이용하여 선택된 element 하위의 모든 element를 찾아서 선택
+		// css() 메소드를 호출하여 css 속성을 변경 후, 선택된 element의 총 개수를 elementCount에 저장	
+		// prepend() 메소드를 이용하여 elementCount를 출력 
+		var elementCount = $("#test").find("*").css("border", "3px solid red").length;
+
+		//elementCount를 화면에 보여준다
+		$("body").prepend("<h3>" + elementCount + "elemnets found </h3>");
+</script>
+</body>
+</html>
