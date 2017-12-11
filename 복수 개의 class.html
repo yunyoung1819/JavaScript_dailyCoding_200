@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>id와 다르게 class같은 경우는 복수 개를 가질 수 있다</title>
+<style>
+div, span{
+	width: 120px;
+	height: 40px;
+	float: left;
+	padding: 10px;
+	margin: 10px;
+	background-color: #EEEEEE;
+}
+</style>
+<script src="http://code.jquery.com/jquery-2.1.4.js"></script>
+</head>
+<body>
+
+<!-- 2개의 div element와 1개의 span element 총 3개의 element로 구성 -->
+
+<div class="myclass">div class="notMe"</div>
+<div class="myclass otherclass">div class="myClass"</div>
+<span class="otherclass myclass">span class="myClass"</span>
+
+<script>
+// myclass, otherclass 2개의 class를 가진 element를 선택하여 css 속성을 변경
+// $(".myclass.otherclass")를 이용하여 element를 선택할 때는 element의 클래스 선언 순서와 무관하게
+// 해당 클래스가 포함되어 있는지만을 체크
+$(".myclass.otherclass").css("border", "13px solid red");
+</script>
+</body>
+</html>
