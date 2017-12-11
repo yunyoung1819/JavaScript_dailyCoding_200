@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title> Basic Filter Selector </title>
+<!-- jquery 사용을 위한 코드 -->
+<script src="http://code.jquery.com/jquery-2.1.4.js"></script>
+</head>
+<body>
+<script>
+
+/*
+*
+Basic Filter Selector - 특정 조건에 해당하는 element를 선택하는 Basic Filter Selector
+
+
+	:animated Selector : animation 효과가 적용된 element를 선택
+	:focus Selector : 현재 focus를 가진 element를 선택
+	:header Selector : h1, h2 등과 같은 header element를 모두 선택
+	:lang() Selector : 특정 언어를 가진 element 선택
+	:not() Selector : 주어진 selector에 해당하진 않은 모든 element를 선택
+	:root Selector : document의 root element를 선택 (<html> element)
+	:even Selector : 짝수 element를 선택
+	:odd Selector : 홀수 element를 선택
+	:first Selector : 첫번째 element를 선택
+	:last Selector : 마지막 element를 선택
+	:eq() Selector : n번째 element를 선택
+	:lt() Selector : n보다 작은 index를 가진 모든 element를 선택
+	:gt() Selector : n보다 큰 index를 가진 모든 element를 선택
+*
+*/
+	
+</script>
+</body>
+</html>
