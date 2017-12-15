@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title> focus Selector </title>
+
+<style>
+.focused {
+	background : #abcdef;
+}
+</style>
+
+<!-- jquery 사용을 위한 코드 -->
+<script src="http://code.jquery.com/jquery-2.1.4.js"></script>
+</head>
+
+<body>
+	<div id="content">
+		<input tabIndex="1">
+		<input tabIndex="2">
+		<select tabIndex="3">
+			<option>slect menu</option>
+		</select>
+		<div tabIndex="4">
+			a div
+		</div>
+	</div>
+
+<script>
+	//content라는 id를 가진 element를 선택하고
+	// deleget() 메소드를 사용하여 선택된 element의 하위 element에서
+	// focus, blur 이벤트 발생시 function을 수행
+	$("#content").deleget("*", "focus blur", function(){
+		// 이벤트가 발생한 element를 jQuery 객체로 element에 저장
+		var elem = $(this);
+		setTimeout(function(){
+			elem.toggleClass("focused", elem.is(":focus"));
+		}, 0);
+	});	
+</script>
+
+</body>
+</html>
