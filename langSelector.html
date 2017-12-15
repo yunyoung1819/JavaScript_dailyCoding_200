@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title> lang() Selector </title>
+
+<!-- css 스타일 지정-->
+<style>
+h3{
+	margin: .25em 0;
+}
+div{
+	line-height: 1.5em
+}
+.usa{
+	background-color: #f00;
+	color: #fff;
+}
+.spain{
+	background-color: #00f;
+	color: #000;
+}
+</style>
+
+<!-- jquery 사용을 위한 코드 -->
+<script src="http://code.jquery.com/jquery-2.1.4.js"></script>
+</head>
+<body>
+<!-- 예제에서 사용할 element 선언 -->	
+<h3> USA </h3>
+<div lang="en-us"> red </div>
+<h3> Espana </h3>
+<div lang="es-es"> rojo </div>
+
+<script>
+// en-us를 lang으로 갖는 element를 선택하여 usa class 속성을 추가한다
+$("div:lang(en-us)").addClass("usa");
+
+// es-es를 lang으로 갖는 element를 선택하여 spain class 속성을 추가한다
+$("div:lang(es-es").addClass("spain");
+
+</script>
+</body>
+</html>
