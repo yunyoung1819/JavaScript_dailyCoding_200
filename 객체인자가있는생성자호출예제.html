@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title> 객체인자가 있는 생성자 호출 예제 </title>
+</head>
+<body>
+
+<script>
+
+// 생성자 함수가 동작하는 절차
+// 1) 빈 객체를 생성 : this = {}
+// 2) 생성자 함수가 실행되면서 속성과 메소드가 this객체에 추가
+// 3) this 객체를 반환
+// 생성자 함수가 객체를 반환하면 this는 무시된다
+
+function User(name){
+	this.name = name;
+	return {name:"오나미"};  //객체를 반환
+}	
+
+var user1 = new User("수지");
+console.log(user1.name);    // 오나미 출력 
+
+</script>
+
+</body>
+</html>

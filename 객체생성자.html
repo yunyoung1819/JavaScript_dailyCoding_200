@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title> 객체 생성자  </title>
+</head>
+<body>
+
+<script>
+
+function User(name){
+	this.name = name; 
+	this.sayHello = function(){
+		console.log("Hello, I am " + name);
+	};
+};
+
+var user1 = new User("윤영"); //User 객체 생성
+var user2 = new User("수지"); //User 객체 생성
+
+user1.sayHello();	// Hello, I am 윤영
+user2.sayHello();	// Hello, I am 수지
+	
+</script>
+
+
+</body>
+</html>

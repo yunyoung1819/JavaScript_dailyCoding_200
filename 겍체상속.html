@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title> 객체상속 </title>
+</head>
+<body>
+
+<script>
+
+function User(name){
+	this.name=name;
+	this.id=123;
+	this.sayHello = function(){
+		alert("Hello, I am " + name);
+	};
+};
+
+var user1 = new User("마동석");
+user1.sayHello();
+</script>
+
+</body>
+</html>
