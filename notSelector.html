@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>not()Selector </title>
+
+<script src="http://code.jquery.com/jquery-2.1.4.js"></script>
+</head>
+
+<body>
+	<!-- element 선언 -->
+	<div>	
+		<input type="checkbox" name="a">
+		<span> protoss </span>
+	</div>
+
+	<div>	
+		<input type="checkbox" name="b">
+		<span> terran </span>
+	</div>
+
+	<div>
+		<input type="checkbox" name="c" checked="checked">
+		<span> zerg </span>
+	</div>
+
+<script>
+	//input element 중에 checked 상태가 아닌 element를 선택하고
+	// 해당 element 다음에 나오는 span element를 선택하시오
+	$("input:not(:checked) + span").css("background-color", "yellow");
+
+	//input element를 선택하여 attribute 속성을 disabled로 변경하시오.
+	$("input").attr("disabled", "disabled");
+
+</script>
+</body>
+</html>
