@@ -1,0 +1,30 @@
+<!doctype thml>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title> last Selector </title>
+
+<style>
+
+table{
+	background: #eee;
+}
+</style>
+<script src="http://code.jquery.com/jquery-2.1.4.js"></script>
+</head>
+
+<body>
+<!-- element 선언 -->
+<table border="1">
+	<tr><td>Row with Index 0</td></tr>
+	<tr><td>Row with Index 1</td></tr>
+	<tr><td>Row with Index 2</td></tr>
+	<tr><td>Row with Index 3</td></tr>
+</table>	
+
+<script>
+	// tr element에서 마지막 element를 선택하여 css 속성을 변경하시오.
+	$("tr:last").css("background-color", "blue");
+</script>
+</body>
+</html>

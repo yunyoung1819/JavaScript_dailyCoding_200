@@ -1,0 +1,30 @@
+<!doctype thml>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title> gt() Selector </title>
+
+<style>
+
+table{
+	background: #eee;
+}
+</style>
+<script src="http://code.jquery.com/jquery-2.1.4.js"></script>
+</head>
+
+<body>
+<!-- element 선언 -->
+<table border="1">
+	<tr><td>0번째 row</td></tr>
+	<tr><td>1번째 row</td></tr>
+	<tr><td>2번째 row</td></tr>
+	<tr><td>3번째 row</td></tr>
+</table>	
+
+<script>
+	// index가 2보다 큰 element를 선택하여 css 속성을 변경하시오
+	$("tr:gt(2)").css("background-color", "blue");
+</script>
+</body>
+</html>
